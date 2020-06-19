@@ -18,6 +18,10 @@ export const config = () => ({
     host: process.env['redis.host'],
     port: process.env['redis.port'],
   },
+  elastic: {
+    host: process.env['elastic.host'],
+    port: process.env['elastic.port'],
+  },
   app: {
     port: +process.env['app.port'],
   },

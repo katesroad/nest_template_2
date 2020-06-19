@@ -16,6 +16,9 @@ lerna-debug.log*
 # env
 *.env
 
+# orm connection
+ormconfig.json
+
 # Tests
 /coverage
 /.nyc_output

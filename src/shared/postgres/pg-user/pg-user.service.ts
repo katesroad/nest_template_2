@@ -11,9 +11,11 @@ export class PgUserService {
   ) {}
 
   async findOne(filter: any) {
-    return this.userRepo.findOne(filter).then((user) => {
+    return this.userRepo.findOne(filter).then(user => {
       if (user) return user;
-      throw new BadRequestException(`Can't find a user with condition: ${JSON.stringify(filter)}`);
-    })
+      throw new BadRequestException(
+        `Can't find a user with condition: ${JSON.stringify(filter)}`,
+      );
+    });
   }
 }
